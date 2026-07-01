@@ -10,5 +10,3 @@ while True:
 
     print("Bot:", result["messages"][-1].content)
 
-## install package pip3 install langgraph langchain langchain-community
-## pip install langgraph langchain langchain-community langchain-core duckduckgo-search sympy
