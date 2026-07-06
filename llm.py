@@ -1,3 +1,5 @@
-from langchain_community.llms import Ollama
+from langchain_ollama import ChatOllama
 
-llm = Ollama(model="llama3.2:3b")
+llm = ChatOllama(
+    model="llama3.2:3b"
+    )
