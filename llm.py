@@ -1,5 +1,10 @@
 from langchain_ollama import ChatOllama
 
 llm = ChatOllama(
-    model="llama3.2:3b"
+    model=input("Choose one of these models: llama 3.2:3b, " \
+"mistral:7b, " \
+"qwen 2.5:3b, " \
+"qwen 3:4b, " \
+"phi-3 mini, " \
+"gemma 3:2b")
     )
