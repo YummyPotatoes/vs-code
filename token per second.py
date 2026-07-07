@@ -1,11 +1,18 @@
 import time
+from langchain_ollama import ChatOllama
+
+llm = ChatOllama(
+    model="llama3.2:3b",
+    temperature=0
+)
 
 start = time.time()
-token_count = 0
+chunk_count = 0
 
 for chunk in llm.stream("Tell me a story"):
-    token_count += 1      # Approximate: one streamed chunk is not always exactly one token
+    chunk_count += 1
 
 elapsed = time.time() - start
 
-print(f"Approx. tokens/sec: {token_count / elapsed:.2f}")
+print(f"Elapsed: {elapsed:.2f} s")
+print(f"Chunks/sec: {chunk_count / elapsed:.2f}")
