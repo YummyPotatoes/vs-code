@@ -5,6 +5,6 @@ llm = ChatOllama(
 "mistral:7b, " \
 "qwen 2.5:3b, " \
 "qwen 3:4b, " \
-"qwen2.5-coder:3b, " \
-"gemma 3:2b")
+"ministral-3:3b, " \
+"gemma 3:2b: ")
     )
