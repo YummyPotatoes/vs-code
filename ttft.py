@@ -3,11 +3,20 @@ import time
 
 url = "http://localhost:11434/api/generate"
 
+llm = input("Choose one of these models: llama 3.2:3b, " \
+"mistral:7b, " \
+"qwen 2.5:3b, " \
+"qwen 3:4b, " \
+"phi-3 mini, " \
+"gemma 3:2b")
+
 data = {
-    "model": "llama3.2:3b",
+    "model": llm,
     "prompt": "Explain how neural networks work",
     "stream": True
 }
+
+print("You have selected: ", llm)
 
 start = time.time()
 

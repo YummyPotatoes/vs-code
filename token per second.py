@@ -1,13 +1,22 @@
 import requests
 
+llm = input("Choose one of these models: llama 3.2:3b, " \
+"mistral:7b, " \
+"qwen 2.5:3b, " \
+"qwen 3:4b, " \
+"phi-3 mini, " \
+"gemma 3:2b")
+
 response = requests.post(
     "http://localhost:11434/api/generate",
     json={
-        "model": "llama3.2:3b",
+        "model": llm,
         "prompt": "Explain how a neural network works.",
         "stream": False
     }
 )
+
+print("You have selected: ", llm)
 
 data = response.json()
 
