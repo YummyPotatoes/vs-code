@@ -7,7 +7,6 @@ import json
 # -----------------------------
 
 MODEL = input("Select your model: ")
-print(MODEL)
 
 PROMPT = """
 Write a 500-word summary of machine learning.
