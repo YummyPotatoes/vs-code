@@ -10,7 +10,7 @@ MODEL = input("Select your model: ")
 print(MODEL)
 
 PROMPT = """
-Explain machine learning in detail.
+Write a 500-word summary of machine learning.
 """
 
 URL = "http://localhost:11434/api/generate"
