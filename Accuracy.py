@@ -8,7 +8,7 @@ from langchain_core.messages import HumanMessage
 
 MODEL_NAME = input("Enter the model name: ")      
 SUBJECT = "all"              # "all" or a specific subject
-MAX_QUESTIONS = 1000         # Set to an integer for testing
+MAX_QUESTIONS = 300         # Set to an integer for testing
 
 # Load MMLU Dataset
 
@@ -120,9 +120,7 @@ print(f"Wrong           : {wrong}")
 print(f"Accuracy        : {accuracy:.2f}%")
 print("==============================")
 
-# ======================================================
 # Save CSV
-# ======================================================
 
 filename = f"{MODEL_NAME}_mmlu_results.csv"
 
