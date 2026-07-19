@@ -24,7 +24,7 @@ if MAX_QUESTIONS:
 llm = ChatOllama(
     model=MODEL_NAME,
     temperature=0,
-    num_predict=20,
+    num_predict=200,
     extra_body={"think": False}
 )
 
