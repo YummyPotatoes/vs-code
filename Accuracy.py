@@ -36,9 +36,19 @@ def build_prompt(sample):
 
     prompt = f"""
 
-<think>false</think>
-
 Answer the following multiple choice question.
+Your entire response must be exactly one character.
+
+Allowed outputs:
+A
+B
+C
+D
+
+Do not say "okay".
+Do not explain.
+Do not show reasoning.
+Output only the letter.
 
 Question:
 {sample["question"]}
