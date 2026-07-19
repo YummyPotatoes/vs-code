@@ -50,23 +50,6 @@ Do not explain.
 Do not show reasoning.
 Output only the letter.
 
-Question:
-{sample["question"]}
-
-A. {choices[0]}
-B. {choices[1]}
-C. {choices[2]}
-D. {choices[3]}
-
-Respond with ONLY ONE LETTER:
-A
-B
-C
-D
-
-DO NOT EXPLAIN.
-DO NOT WRITE WORDS.
-
 """
 
     return prompt.strip()
