@@ -48,7 +48,11 @@ Respond with ONLY ONE LETTER:
 A
 B
 C
-or D.
+D
+
+DO NOT EXPLAIN.
+DO NOT WRITE WORDS.
+
 """
 
     return prompt.strip()
