@@ -92,6 +92,7 @@ for i, sample in enumerate(test_set):
     if is_correct:
         correct += 1
     else:
+        print("FAILED RESPONSE:", repr(response.content))
         wrong += 1
 
     results.append([
