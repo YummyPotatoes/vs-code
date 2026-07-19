@@ -1,7 +1,7 @@
 import re
 import csv
 from datasets import load_dataset
-from langchain_community.chat_models import ChatOllama
+from langchain_ollama import ChatOllama
 from langchain_core.messages import HumanMessage
 
 # Configuration
