@@ -24,7 +24,7 @@ if MAX_QUESTIONS:
 llm = ChatOllama(
     model=MODEL_NAME,
     temperature=0,
-    num_predict=200,
+    num_predict=50,
     extra_body={"think": False}
 )
 
@@ -35,6 +35,9 @@ def build_prompt(sample):
     choices = sample["choices"]
 
     prompt = f"""
+
+<think>false</think>
+
 Answer the following multiple choice question.
 
 Question:
