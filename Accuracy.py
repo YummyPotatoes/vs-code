@@ -37,18 +37,17 @@ def build_prompt(sample):
     prompt = f"""
 
 Answer the following multiple choice question.
-Your entire response must be exactly one character.
 
-Allowed outputs:
-A
-B
-C
-D
+Question:
+{sample["question"]}
 
-Do not say "okay".
-Do not explain.
-Do not show reasoning.
-Output only the letter.
+A. {choices[0]}
+B. {choices[1]}
+C. {choices[2]}
+D. {choices[3]}
+
+Reply with exactly one uppercase letter: A, B, C, or D.
+Do not explain your answer.
 
 """
 
