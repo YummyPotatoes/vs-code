@@ -8,7 +8,7 @@ from langchain_core.messages import HumanMessage
 
 MODEL_NAME = input("Enter the model name: ")      
 SUBJECT = "all"              # "all" or a specific subject
-MAX_QUESTIONS = 300         # Set to an integer for testing
+MAX_QUESTIONS = 250         # Set to an integer for testing
 
 # Load MMLU Dataset
 
